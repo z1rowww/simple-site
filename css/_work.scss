@@ -1,0 +1,29 @@
+.work {
+  background-color: $color-bg;
+
+  .work-header {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px $space-lg 50px;
+
+    &__title {
+      font-size: 2rem;
+      line-height: 2.34rem;
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      color: $color-text;
+    }
+  }
+
+  .work-video {
+    justify-content: center;
+    padding-bottom: 100px;
+
+    iframe {
+      width: 100%;
+      min-height: calc(100vw / 16 * 5);
+    }
+  }
+}
