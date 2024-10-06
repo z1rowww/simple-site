@@ -13,11 +13,18 @@ $font-size-sm: 0.8125rem;
 $font-size-xl: 3rem;
 $font-size-xxl: 2.5rem;
 
+$line-height-sm: 1.3rem;
 $line-height-normal: 1.64rem;
-$line-height-lg: 4.92rem;
+$line-height-lg: 2.34rem;
+$line-height-xl: 3.4rem;
+$line-height-xxl: 4.92rem;
 
 $space-base: 1em;
 $space-lg: 3%;
-$space-xl: 50px;
+$space-sm: 1.25rem;
+$space-lg: $space-sm * 2.5;
+$space-xl: $space-lg * 2;
+
+$max-width: 600px;
 
 $transition-default: 0.3s ease;
