@@ -1,0 +1,19 @@
+.footer {
+  padding: 20px 0;
+  background-color: $color-primary;
+  color: $color-white;
+
+  &__bg {
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  &__sm {
+    font-size: $font-size-sm;
+    line-height: 1.3rem;
+    text-align: left;
+    font-weight: 400;
+    padding-bottom: 50px;
+  }
+}
