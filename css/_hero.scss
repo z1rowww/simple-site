@@ -1,0 +1,33 @@
+.hero {
+  &__title {
+    font-size: $font-size-xl;
+    line-height: $line-height-lg;
+    margin-bottom: 60px;
+  }
+
+  &__text {
+    margin-bottom: 65px;
+    color: $color-text;
+    max-width: 540px;
+  }
+
+  &__btn {
+    display: inline-block;
+    min-width: 225px;
+    min-height: 65px;
+    text-decoration: none;
+    text-align: center;
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 20px 2%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 141px;
+
+    @include transition($transition-default);
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+}
