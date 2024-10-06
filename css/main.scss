@@ -1,0 +1,82 @@
+@import "variables";
+@import "mixins";
+@import "base";
+@import "header";
+@import "hero";
+@import "about";
+@import "project";
+@import "work";
+@import "footer";
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 375px) {
+  .navbar,
+  .hero__title,
+  .hero__text,
+  .hero__btn,
+  .about__title,
+  .work-header__title {
+    margin-bottom: 0.5em;
+  }
+
+  .hero__title {
+    margin-top: 1em;
+  }
+
+  .hero__title,
+  .about__title,
+  .work-header__title {
+    font-size: 2rem;
+    line-height: normal;
+  }
+
+  .container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header,
+  .project__container,
+  .about {
+    padding: 1.5em;
+  }
+
+  .footer__bg,
+  .footer__sm {
+    padding: 0.5em;
+  }
+
+  .navbar__btn {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+  }
+
+  .project .project__container {
+    width: 100%;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .work .work-header {
+    padding: 1em;
+  }
+
+  .work .work-header__title {
+    margin-bottom: 0.5em;
+  }
+
+  .work .work-video {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+  }
+}
