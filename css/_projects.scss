@@ -3,21 +3,18 @@
   color: $color-white;
 
   &__container {
+    @include flex-wrap;
+    justify-content: center;
+    gap: $space-lg;
+    padding: $space-xl 0;
+  }
+
+  &__item {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 100px 0;
+    gap: $space-sm;
+  }
 
-    &__item {
-      display: flex;
-      gap: 20px;
-    }
-
-    &__description {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+  &__number {
+    font-size: $font-size-lg;
   }
 }
