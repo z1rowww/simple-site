@@ -8,9 +8,7 @@
 @import "work";
 @import "footer";
 
-// MEDIA QUERIES
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 934px) {
   .navbar,
   .hero__title,
   .hero__text,
@@ -28,17 +26,7 @@
   .about__title,
   .work-header__title {
     font-size: 2rem;
-    line-height: normal;
-  }
-
-  .container {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
+    line-height: $line-height-lg;
   }
 
   .header,
@@ -52,31 +40,54 @@
     padding: 0.5em;
   }
 
+  .navbar-list {
+    display: none;
+  }
+  .navbar-list--active {
+    display: block;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .header {
+    padding-top: 0.5em;
+  }
+
+  .navbar {
+    margin-bottom: 3em;
+  }
+
   .navbar__btn {
     position: absolute;
-    top: 1em;
-    left: 1em;
-    z-index: 1000;
-    transition: transform 0.3s ease;
+    @include menu-position();
   }
 
-  .project .project__container {
-    width: 100%;
-    justify-content: center;
-    gap: 2em;
+  .project {
+    &__container {
+      justify-content: center;
+      gap: 2em;
+    }
   }
 
-  .work .work-header {
-    padding: 1em;
-  }
+  .work {
+    &__header {
+      padding: 1em;
+    }
 
-  .work .work-header__title {
-    margin-bottom: 0.5em;
-  }
+    &__title {
+      margin-bottom: 0.5em;
+    }
 
-  .work .work-video {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1em;
+    &__video {
+      padding-bottom: 1em;
+    }
+  }
+}
+
+@media screen and (min-width: 935px) {
+  #burger {
+    display: none;
   }
 }
