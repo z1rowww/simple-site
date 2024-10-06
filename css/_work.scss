@@ -1,25 +1,26 @@
 .work {
   background-color: $color-bg;
 
-  .work-header {
-    max-width: 600px;
+  &__header {
+    max-width: $max-width;
     margin: 0 auto;
-    padding: 100px $space-lg 50px;
-
-    &__title {
-      font-size: 2rem;
-      line-height: 2.34rem;
-      margin-bottom: 50px;
-    }
-
-    &__text {
-      color: $color-text;
-    }
+    padding: $space-xl $space-lg $space-lg;
   }
 
-  .work-video {
+  &__title {
+    font-size: $font-size-md * 2;
+    line-height: $line-height-lg;
+    margin-bottom: $space-lg;
+  }
+
+  &__text {
+    color: $color-text;
+    line-height: $line-height-normal;
+  }
+
+  &__video {
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: $space-xl;
 
     iframe {
       width: 100%;
