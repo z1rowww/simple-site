@@ -1,28 +1,29 @@
 .hero {
   &__title {
     font-size: $font-size-xl;
-    line-height: $line-height-lg;
-    margin-bottom: 60px;
+    line-height: $line-height-xxl;
+    margin-bottom: $space-lg;
   }
 
   &__text {
-    margin-bottom: 65px;
+    margin-bottom: $space-lg + 0.95rem;
     color: $color-text;
-    max-width: 540px;
+    max-width: $max-width - 60px;
+    line-height: $line-height-normal;
   }
 
   &__btn {
     display: inline-block;
     min-width: 225px;
-    min-height: 65px;
+    min-height: $space-lg + 0.95rem;
     text-decoration: none;
     text-align: center;
     background-color: $color-primary;
     color: $color-white;
-    padding: 20px 2%;
+    padding: $space-sm 2%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 141px;
+    margin-bottom: $space-lg + 2.56rem;
 
     @include transition($transition-default);
 
