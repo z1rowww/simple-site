@@ -1,0 +1,17 @@
+.about {
+  padding-top: 112px;
+  padding-bottom: 100px;
+  background-color: $color-white;
+
+  &__title {
+    font-size: $font-size-xxl;
+    line-height: 3.4rem;
+    margin-bottom: 50px;
+  }
+
+  .about-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 $space-lg;
+  }
+}
