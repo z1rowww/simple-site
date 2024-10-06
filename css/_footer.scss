@@ -1,19 +1,19 @@
 .footer {
-  padding: 20px 0;
+  padding: $space-sm 0;
   background-color: $color-primary;
   color: $color-white;
 
   &__bg {
     text-align: left;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: $space-lg;
+    padding-bottom: $space-sm;
   }
 
   &__sm {
     font-size: $font-size-sm;
-    line-height: 1.3rem;
+    line-height: $line-height-sm;
     text-align: left;
     font-weight: 400;
-    padding-bottom: 50px;
+    padding-bottom: $space-lg;
   }
 }
