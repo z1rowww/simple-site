@@ -1,0 +1,23 @@
+.project {
+  background-color: $color-primary;
+  color: $color-white;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 100px 0;
+
+    &__item {
+      display: flex;
+      gap: 20px;
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
