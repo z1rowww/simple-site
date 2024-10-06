@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $font-size-base;
+}
+
+body {
+  font-size: $font-size-md;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 62%;
+  margin: 0 auto;
+  padding: 0 $space-lg;
+}
