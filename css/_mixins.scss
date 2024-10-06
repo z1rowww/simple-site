@@ -7,3 +7,15 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin menu-position {
+  top: 1.5em;
+  left: 1.5em;
+  z-index: 1000;
+  @include transition($transition-default);
+}
