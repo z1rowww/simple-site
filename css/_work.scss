@@ -1,26 +1,29 @@
+@use "variables" as var;
+
 .work {
-  background-color: $color-bg;
+  background-color: var.$color-bg;
 
   &__header {
-    max-width: $max-width;
+    max-width: var.$max-width;
     margin: 0 auto;
-    padding: $space-xl $space-lg $space-lg;
+    padding: var.$space-xl var.$space-lg var.$space-lg;
   }
 
   &__title {
-    font-size: $font-size-md * 2;
-    line-height: $line-height-lg;
-    margin-bottom: $space-lg;
+    font-size: calc(var.$font-size-md * 2);
+    line-height: var.$line-height-lg;
+    margin-bottom: var.$space-lg;
+    text-align: center;
   }
 
   &__text {
-    color: $color-text;
-    line-height: $line-height-normal;
+    color: var.$color-text;
+    line-height: var.$line-height-normal;
   }
 
   &__video {
     justify-content: center;
-    padding-bottom: $space-xl;
+    padding-bottom: var.$space-xl;
 
     iframe {
       width: 100%;
