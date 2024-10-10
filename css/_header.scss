@@ -1,20 +1,23 @@
+@use "variables" as vars;
+@use "mixins";
+
 .header {
-  background-color: $color-bg;
-  padding: calc($space-xl - $space-sm) 0;
+  background-color: vars.$color-bg;
+  padding: calc(vars.$space-xl - vars.$space-sm) 0;
 }
 
 .navbar {
-  margin-bottom: $space-xl + 2.125rem;
+  margin-bottom: calc(vars.$space-xl + 2.125rem);
 
   &-list {
-    @include flex-wrap;
-    column-gap: $space-sm + 0.18rem;
-    margin-left: -calc($space-sm / 2);
+    @include mixins.flex-wrap;
+    column-gap: calc(vars.$space-sm + 0.18rem);
+    margin-left: -calc(vars.$space-sm / 2);
     list-style: none;
 
     &--active {
       display: block;
-      line-height: $line-height-normal;
+      line-height: vars.$line-height-normal;
       position: relative;
       padding-top: 1em;
     }
@@ -22,12 +25,12 @@
     .nav__link {
       display: block;
       text-decoration: none;
-      color: $color-black;
+      color: vars.$color-black;
       letter-spacing: 0.1em;
       text-transform: uppercase;
 
       &:hover {
-        color: $color-accent;
+        color: vars.$color-accent;
       }
     }
   }
@@ -62,7 +65,7 @@
     position: absolute;
     width: 100%;
     height: 4px;
-    background-color: $color-primary;
+    background-color: vars.$color-primary;
     border-radius: 4px;
     opacity: 1;
     transform: rotate(0deg);
