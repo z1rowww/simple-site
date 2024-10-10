@@ -1,3 +1,5 @@
+@use "variables" as var;
+
 @mixin transition($properties) {
   transition: $properties;
 }
@@ -17,5 +19,5 @@
   top: 1.5em;
   left: 1.5em;
   z-index: 1000;
-  @include transition($transition-default);
+  @include transition(var.$transition-default);
 }
