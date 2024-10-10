@@ -1,20 +1,29 @@
+@use "variables" as var;
+@use "mixins";
+
 .project {
-  background-color: $color-primary;
-  color: $color-white;
+  background-color: var.$color-primary;
+  color: var.$color-white;
 
   &__container {
-    @include flex-wrap;
+    @include mixins.flex-wrap;
     justify-content: center;
-    gap: $space-lg;
-    padding: $space-xl 0;
+    gap: var.$space-lg;
+    padding: var.$space-xl 0;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
   &__item {
     display: flex;
-    gap: $space-sm;
+    gap: var.$space-sm;
   }
 
   &__number {
-    font-size: $font-size-lg;
+    font-size: var.$font-size-lg;
   }
 }
