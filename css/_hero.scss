@@ -1,34 +1,37 @@
+@use "variables" as vars;
+@use "mixins";
+
 .hero {
   &__title {
-    font-size: $font-size-xl;
-    line-height: $line-height-xxl;
-    margin-bottom: $space-lg;
+    font-size: vars.$font-size-xxl;
+    line-height: vars.$line-height-xxl;
+    margin-bottom: vars.$space-lg;
   }
 
   &__text {
-    margin-bottom: $space-lg + 0.95rem;
-    color: $color-text;
-    max-width: $max-width - 60px;
-    line-height: $line-height-normal;
+    margin-bottom: calc(vars.$space-lg + 0.95rem);
+    color: vars.$color-text;
+    max-width: calc(vars.$max-width - 60px);
+    line-height: vars.$line-height-normal;
   }
 
   &__btn {
     display: inline-block;
     min-width: 225px;
-    min-height: $space-lg + 0.95rem;
+    min-height: calc(vars.$space-lg + 0.95rem);
     text-decoration: none;
     text-align: center;
-    background-color: $color-primary;
-    color: $color-white;
-    padding: $space-sm 2%;
+    background-color: vars.$color-primary;
+    color: vars.$color-white;
+    padding: vars.$space-sm 2%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: $space-lg + 2.56rem;
+    margin-bottom: calc(vars.$space-lg + 2.56rem);
 
-    @include transition($transition-default);
+    @include mixins.transition(vars.$transition-default);
 
     &:hover {
-      background-color: $color-secondary;
+      background-color: vars.$color-secondary;
     }
   }
 }
