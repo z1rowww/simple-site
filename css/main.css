@@ -134,9 +134,10 @@ body {
   padding: 0 1.25rem;
 }
 .about__title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 3.4rem;
   margin-bottom: 1.25rem;
+  text-align: center;
 }
 .about__text {
   color: #727272;
@@ -153,6 +154,11 @@ body {
   justify-content: center;
   gap: 3.125rem;
   padding: 6.25rem 0;
+}
+.project__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .project__item {
   display: flex;
@@ -174,6 +180,7 @@ body {
   font-size: 2rem;
   line-height: 2.34rem;
   margin-bottom: 3.125rem;
+  text-align: center;
 }
 .work__text {
   color: #727272;
@@ -272,5 +279,8 @@ body {
 @media screen and (min-width: 935px) {
   #burger {
     display: none;
+  }
+  .navbar-list--active {
+    display: flex;
   }
 }/*# sourceMappingURL=main.css.map */
