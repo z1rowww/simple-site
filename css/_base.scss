@@ -1,3 +1,5 @@
+@use "variables" as vars;
+
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +8,16 @@
 }
 
 html {
-  font-size: $font-size-base;
+  font-size: vars.$font-size-base;
 }
 
 body {
-  font-size: $font-size-md;
+  font-size: vars.$font-size-md;
   font-family: "Roboto", sans-serif;
 }
 
 .container {
   width: 62%;
   margin: 0 auto;
-  padding: 0 $space-sm;
+  padding: 0 vars.$space-sm;
 }
